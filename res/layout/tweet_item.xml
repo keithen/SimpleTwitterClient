@@ -9,6 +9,8 @@
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:src="@drawable/ic_launcher" />
 
     <TextView
@@ -16,9 +18,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="14dp"
         android:layout_toRightOf="@+id/ivProfileImage"
-        android:text="@string/foo_label" />
+        android:textStyle="bold"
+        android:text="@string/foo_bar" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvUserName"
+        android:text="@string/foo_label"
+        android:layout_marginLeft="4dp"
+        android:textColor="#a0a0a0" />
+    
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/create_date"
+        android:textColor="#a0a0a0" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -26,6 +47,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/tvUserName"
         android:layout_below="@+id/tvUserName"
-        android:text="This is the tweet body." />
+        android:text="@string/tweet_body" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivProfileImage"
+        android:layout_toRightOf="@+id/tvBody"
+        android:text="TextView" />
 
 </RelativeLayout>
