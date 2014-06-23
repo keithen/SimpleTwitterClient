@@ -4,7 +4,7 @@ Assignment 3 for CodePath Android class
 by Keithen Hayenga
 23 June 2014
 
-Hours Spent: 10
+Hours Spent: 14
 
 
 Description:
@@ -17,7 +17,7 @@ User Stories:
  * [x] User can sign in to Twitter using OAuth login
  * [x] User can view the tweets from their home timeline
  * [x] User should be able to see the username, name, body and timestamp for each tweet
- * [ ] User should be displayed the relative timestamp for a tweet "8m", "7h"
+ * [x] User should be displayed the relative timestamp for a tweet "8m", "7h"
  * [ ] User can view more tweets as they scroll with infinite pagination
  * [ ] User can compose a new tweet
  * [ ] User can click a “Compose” icon in the Action Bar on the top right
