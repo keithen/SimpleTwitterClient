@@ -1,9 +1,10 @@
 package com.codepath.apps.basictwitter;
 
 import org.scribe.builder.api.Api;
-import org.scribe.builder.api.FlickrApi;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -35,9 +36,30 @@ public class TwitterClient extends OAuthBaseClient {
     public void getHomeTimeline(AsyncHttpResponseHandler handler) {
         String apiUrl = getApiUrl("statuses/home_timeline.json");
         RequestParams params = new RequestParams();
-        params.put("since_id ", "1");
+        params.put("since_id", "1");
         client.get(apiUrl, params, handler);
     }
+    
+    public void postTweet(AsyncHttpResponseHandler handler, String tweetMsg) {
+        String apiUrl = getApiUrl("statuses/update.json");
+        RequestParams params = new RequestParams();
+        params.put("status", tweetMsg);
+        client.post(apiUrl, params, handler);
+    }
+    
+////    return POST(urls[0],person);
+/*
+    Parameters
+    status required
+
+    The text of your status update, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts.
+    // http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=<key>
+    public void getBoxOfficeMovies(JsonHttpResponseHandler handler) {
+        String url = getApiUrl("lists/movies/box_office.json");
+        RequestParams params = new RequestParams("apikey", API_KEY);
+        client.get(url, params, handler);
+    }
+*/
     
     // CHANGE THIS
     // DEFINE METHODS for different API endpoints here
@@ -59,4 +81,5 @@ public class TwitterClient extends OAuthBaseClient {
      *    i.e client.get(apiUrl, params, handler);
      *    i.e client.post(apiUrl, params, handler);
      */
+    
 }

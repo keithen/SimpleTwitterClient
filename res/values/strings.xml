@@ -5,10 +5,17 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_photos">Flickr Photos</string>
     <string name="login_label">Connect to Twitter</string>
-    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="title_activity_timeline">Twitter Timeline</string>
     <string name="foo_label">\@foo</string>
     <string name="foo_bar">Foo Bar</string>
     <string name="tweet_body">This is a tweet body.</string>
     <string name="create_date">1d</string>
+    <string name="to_lable">To:</string>
+    <string name="message_lable">Tweet:</string>
+    <string name="toHint">\@twitteruser</string>
+    <string name="stSend">Send</string>
+    <string name="message_hint">Put message here.</string>
+    <string name="title_activity_compose">Compose Tweet</string>
+    <string name="stCompose">Compose</string>
 
 </resources>
